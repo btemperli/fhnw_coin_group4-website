@@ -145,6 +145,164 @@ function App() {
             }]
         });
     });
+
+    $(function () {
+        $('#container-student').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Studenten: Abschluesse FH'
+            },
+            subtitle: {
+                text: 'Quelle: Bundesamt fuer Statistik'
+            },
+            xAxis: {
+                categories: [
+                    'Architektur, Bau- und Planungsw.',
+                    'Technik und IT',
+                    'Chemie und Life Sciences',
+                    'Land- und Forstwirtschaft',
+                    'Wirtschaft und Dienstleistungen',
+                    'Design',
+                    'Sport',
+                    'Musik, Theater und andere Künste',
+                    'Angewandte Linguistik',
+                    'Soziale Arbeit',
+                    'Angewandte Psychologie',
+                    'Gesundheit',
+                    'Lehrfrachkraefteausbildung'
+                ],
+                crosshair: true
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Studenten (%)'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '1997/98',
+                data: [
+                    14.4585726,
+                    41.30434783,
+                    4.655455291,
+                    1.866283839,
+                    30.70139459,
+                    5.106644791,
+                    0,
+                    0,
+                    0,
+                    1.907301066,
+                    0,
+                    0,
+                    0
+                ]
+
+            }, {
+                name: '2000/01',
+                data: [
+                    9.560699964,
+                    31.26139264,
+                    3.518045935,
+                    1.344331024,
+                    30.09022968,
+                    5.637076194,
+                    0.159496901,
+                    10.24425811,
+                    0.578745899,
+                    6.726212176,
+                    0.692672257,
+                    0.186839227,
+                    0
+                ]
+
+            }, {
+                name: '2005/06',
+                data: [
+                    5.670413697,
+                    18.49689364,
+                    2.744820994,
+                    0.766721383,
+                    23.79953041,
+                    4.438257111,
+                    0.157915515,
+                    8.674964157,
+                    0.552704303,
+                    9.15494421,
+                    0.760487876,
+                    3.251812912,
+                    21.5305338
+                ]
+
+            }, {
+                name: '2010/11',
+                data: [
+                    5.005846568,
+                    13.82898418,
+                    3.242995219,
+                    0.597978123,
+                    25.6553337,
+                    4.144402836,
+                    0.179097408,
+                    7.958733589,
+                    0.648303015,
+                    9.492162638,
+                    0.865884164,
+                    7.772235461,
+                    20.6080431
+                ]
+            }, {
+                name: '2014/15',
+                data: [
+                    5.007668525,
+                    13.6901429,
+                    2.867784892,
+                    0.578182438,
+                    25.16371692,
+                    3.464225722,
+                    0.223969618,
+                    7.32891886,
+                    0.486890474,
+                    8.774983567,
+                    1.012732186,
+                    8.174891058,
+                    23.22589284
+                ]
+            }, {
+                name: '2015/16',
+                data: [
+                    4.930631682,
+                    13.96324717,
+                    2.779447647,
+                    0.595259144,
+                    25.07396537,
+                    3.401817603,
+                    0.194490611,
+                    7.203225008,
+                    0.517462899,
+                    8.642455532,
+                    1.073823921,
+                    8.358381367,
+                    23.27640063
+                ]
+            }]
+        });
+    });
 }
 
 App();
