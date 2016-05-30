@@ -10,7 +10,7 @@ function App() {
 
     // do the things for the data-tables
     $(function () {
-        $('#container').highcharts({
+        $('#container-erwerb').highcharts({
             chart: {
                 type: 'column'
             },
@@ -27,7 +27,7 @@ function App() {
                     '3) Technische Berufe sowie Informatikberufe',
                     '4) Berufe des Bau- und Ausbaugewerbes und des Bergbaus',
                     '5) Handels- und Verkehrsberufe',
-                    '6) Berufe des Gastgewerbes und Berufe zur Erbringung persönlicher Dienstleistungen',
+                    '6) Berufe des Gastgewerbes und Berufe zur Erbringung persoenlicher Dienstleistungen',
                     '7) Berufe des Managements und der Administration, des Bank- und Versicherungsgewerbes und des Rechtswesens',
                     '8) Gesundheits-, Lehr- und Kulturberufe, Wissenschaftler',
                     '9) Nicht klassierbare Angaben',
@@ -38,7 +38,7 @@ function App() {
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Erwerbstätige (%)'
+                    text: 'Erwerbstaetige (%)'
                 }
             },
             tooltip: {
