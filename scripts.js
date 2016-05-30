@@ -15,10 +15,10 @@ function App() {
                 type: 'column'
             },
             title: {
-                text: 'Monthly Average Rainfall'
+                text: 'Erwerbstaetige'
             },
             subtitle: {
-                text: 'Source: WorldClimate.com'
+                text: 'Quelle: Bundesamt fuer Statistik'
             },
             xAxis: {
                 categories: [
@@ -30,7 +30,8 @@ function App() {
                     '6) Berufe des Gastgewerbes und Berufe zur Erbringung persönlicher Dienstleistungen',
                     '7) Berufe des Managements und der Administration, des Bank- und Versicherungsgewerbes und des Rechtswesens',
                     '8) Gesundheits-, Lehr- und Kulturberufe, Wissenschaftler',
-                    '9) Nicht klassierbare Angaben'
+                    '9) Nicht klassierbare Angaben',
+                    '10) unbekannte Berufe'
                 ],
                 crosshair: true
             },
@@ -56,25 +57,91 @@ function App() {
             },
             series: [{
                 name: '1970',
-                data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4]
+                data: [
+                    8.163719772,
+                    27.4184708,
+                    7.064667516,
+                    6.088744574,
+                    14.54642679,
+                    9.729748746,
+                    16.47980327,
+                    7.072160814,
+                    0.043728496,
+                    3.392529217
+                ]
 
             }, {
                 name: '1980',
-                data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2]
+                data: [
+                    6.60136114,
+                    21.71264445,
+                    7.960378693,
+                    6.541996563,
+                    14.74562852,
+                    9.637849129,
+                    19.20430578,
+                    10.95849196,
+                    0.029210606,
+                    2.608133149
+                ]
 
             }, {
                 name: '1990',
-                data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4]
+                data: [
+                    4.397903309,
+                    13.89017098,
+                    7.648825117,
+                    6.066717925,
+                    14.04853767,
+                    7.81126434,
+                    20.74603621,
+                    12.5373099,
+                    0.364390688,
+                    12.48884386
+                ]
 
             }, {
                 name: '2000',
-                data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6]
+                data: [
+                    2.654079661,
+                    9.032041535,
+                    6.733660232,
+                    4.117056365,
+                    11.62540398,
+                    6.441601026,
+                    18.29874909,
+                    13.24174192,
+                    0.471128091,
+                    27.3845381
+                ]
             }, {
                 name: '2010',
-                data: []
+                data: [
+                    2.786199834,
+                    9.423923463,
+                    8.797820982,
+                    5.10874211,
+                    13.90501465,
+                    9.13263572,
+                    23.09775173,
+                    18.39430211,
+                    4.54105426,
+                    4.81255515
+                ]
             }, {
                 name: '2014',
-                data: []
+                data: [
+                    2.765080167,
+                    8.998145598,
+                    9.568255197,
+                    4.996406985,
+                    13.24283678,
+                    9.129942853,
+                    23.5485876,
+                    19.57114726,
+                    4.065925475,
+                    4.113664833
+                ]
             }]
         });
     });
