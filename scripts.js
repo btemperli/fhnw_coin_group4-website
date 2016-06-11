@@ -21,6 +21,10 @@ function App() {
         $(this).tab('show');
         reflow();
     });
+    $('#twitter-tabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
 
     // do the things for the data-tables
     containerErwerb.highcharts({
