@@ -25,6 +25,10 @@ function App() {
         e.preventDefault();
         $(this).tab('show');
     });
+    $('#image-tabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
 
     // do the things for the data-tables
     containerErwerb.highcharts({
